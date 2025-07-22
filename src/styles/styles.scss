@@ -1,0 +1,162 @@
+@import url('./normolize.scss');
+@import url('./fonts.scss');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SFUIDisplay', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    height: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    display: block;
+    padding: 8px 13px;
+    background-color: #5ABEAF;
+    border-radius: 30px;
+    border: 1px solid #5ABEAF;
+    max-width: 230px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: color linear 0.3s, scale linear 0.3s, opacity linear 0.3s;
+    text-decoration: none;
+    box-shadow: 0px 2px 2px 0px #8750FF0F;
+    text-align: center;
+
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.btn:hover {
+    color: #FFFFFF99;
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.header {}
+
+.header__content {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.text {
+    text-align: center;
+     margin-bottom: 24px;
+}
+
+.team {
+   
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background: linear-gradient(180deg, #FFFFFF 0%, #CFF1EC 182.65%);
+     padding: 24px 10px;
+     border-radius: 16px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.team__list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+}
+
+.team__list .item {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #5ABEAF;
+    border: 1px solid #fff;
+    margin-right: -24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.team__list .item1 {
+  background-image: url('../img/face1.png');
+}
+
+.team__list .item2 {
+  background-image: url('../img/face2.png');
+}
+
+.team__list .item3 {
+  background-image: url('../img/face3.png');
+}
+
+.team__list .item4 {
+  background-image: url('../img/face4.png');
+}
+
+.team__list .item5 {
+  background-image: url('../img/Plus.svg');
+}
+
+.team img {
+    border-radius: 16px;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        margin: 0 48px;
+    }
+}
+
+@media (max-width: 743px) {
+    .container {
+        margin: 0 14px;
+    }
+}
